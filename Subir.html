@@ -1,0 +1,19 @@
+//BOTON SUBIR// EFECTOS//
+
+<script language="JavaScript">
+function abajo() {
+window.scrollBy(0,20); // velocidad abajo
+scrolldelay = setTimeout('abajo()',100); // tiempo
+}
+function subir() {
+window.scrollBy(0,-80); // velocidad subir
+scrolldelay = setTimeout('subir()',100); // tiempo
+}
+function stopScroll() {
+clearTimeout(scrolldelay);
+}
+</script>
+
+<a style="display:scroll;position:fixed;
+bottom:5px;right:30px;" onmouseover="subir()" onmouseout="stopScroll()" href="" title="Ir Arriba"><img src="Images/boton-subir.png"/></a>
+
